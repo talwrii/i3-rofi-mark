@@ -35,8 +35,13 @@ def main():
     if options.stdout:
         print(output, end='')
     else:
+
+        if os.path.exists('README.md'):
+            os.chmod('README.md', 0o700)
         with open('README.md', 'w') as out_stream:
             out_stream.write(output)
+        os.chmod('README.md', 0o400)
+
 
 if __name__ == '__main__':
 	main()

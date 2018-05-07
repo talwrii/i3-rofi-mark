@@ -13,7 +13,7 @@ Requires python3 but can co-exist with python2.
 # Installing
 
 ```
-apt-get install python3
+sudo apt-get install zenity rofi python3
 pip3 install git+https://github.com/talwrii/i3-rofi-mark#egg=i3-rofi-mark
 ```
 
